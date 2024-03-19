@@ -9,29 +9,12 @@
     This is a <a href="https://nextjs.org/"><b>Next.js</b></a> project bootstrapped with <a href="https://github.com/vercel/next.js/tree/canary/packages/create-next-app">create-next-app</a>.
 </h6>
 
----
-
-<p align="center">
-  <a href="#about">About</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#pre-requisites">Pre-requisites</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#how-to-contribute">How to contribute</a> •
-  <a href="#learn-more">Learn More</a> •
-  <a href="#author">Author</a>
-</p>
-
----
-
-
 ```bash
 
 # Clone this repository
-$ git clone https://github.com/Lucas-zz/Sonica-Frontend-Challenge
 
 # Access the project folder cmd/terminal
-$ cd Sonica-Frontend-Challenge
-
+$ cd to root folder
 # Install the dependencies
 $ npm install
 
