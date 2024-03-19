@@ -2,7 +2,7 @@
   <img src="./public/assets/ethereum.png" />
 </div>
 
-<h1 align="center">CRONOS - Landing Page</h1>
+<h1 align="center">CHATFLY - Landing Page</h1>
 <h4 align="center">Status: <b>Finished</b></h4>
 
 <h6 align="center">
@@ -23,42 +23,6 @@
 
 ---
 
-## About
-
-<p>This Landing Page was part of a challenge for an Entry-level Full-Stack Role focusing on Frontend by <a href="https://web3.sonica.digital/">Sonica Digital</a>.</p>
-<p>This was my first time using Next.js 13 and Framer Motion, so it was a great learning experience on all levels. Besides, I had a great time developing this project.</p>
-<p>You can explore it by clicking <a href="https://sonica-frontend-challenge.vercel.app/">here</a>.</p>
-
-<h6 align="center">The project was deployed on <a href="https://vercel.com">Vercel</a>.</h6>
-
----
-
-## Tech Stack
-
-The following tools were used in the construction of this application:
-
-- **[Next.js](https://nextjs.org/docs/getting-started)**
-- **[Typescript](https://www.typescriptlang.org/docs/)**
-- **[TailwindCSS](https://tailwindcss.com/docs/installation)**
-- **[Framer Motion](https://www.framer.com/motion/)**
-- **[ESLint](https://eslint.org/)**
-
-> See the file [package.json](https://github.com/Lucas-zz/Pokedex_Front/blob/main/package.json) for more info.
-
-**Workspace**
-
-- Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
-- OS: **[Ubuntu](https://releases.ubuntu.com/22.04/)**
-- Browser: **[Microsoft Edge](https://www.microsoft.com/en-us/edge)** (Edge on Ubuntu!? Yeah, I know...)
-
----
-
-## Pre-requisites
-
-Before you begin, you will need to have the following tools installed on your machine:
-[npm](https://www.npmjs.com/), [Git](https://git-scm.com), [VSCode](https://code.visualstudio.com/).
-
-### Intial configs
 
 ```bash
 
@@ -111,6 +75,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ---
 
-## Author
-
-[<img src="https://avatars.githubusercontent.com/Lucas-zz" width=150 title="Lucas-zz"><br>Lucas Azzolini Vieira](https://github.com/Lucas-zz)
