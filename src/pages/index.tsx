@@ -5,6 +5,10 @@ import Newsletter from "./components/Newsletter";
 import Welcome from "./components/Welcome";
 import Community from "./components/Community";
 import Hub from "./components/Hub";
+import Intergration from "./components/Intergration";
+import Plan from "./components/Plan";
+import Contact from "./components/Contact";
+import Template from "./components/Template";
 
 export default function Home() {
   return (
@@ -25,6 +29,10 @@ export default function Home() {
         <Hub />
         <Newsletter />
       </main>
+      <Intergration />
+      <Plan />
+      <Contact />
+      <Template />
       <Footer />
     </>
   );
