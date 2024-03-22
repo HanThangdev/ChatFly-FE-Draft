@@ -18,14 +18,29 @@ export default function Home() {
         />
         <link rel="icon" href="/assets/yuan.png" />
       </Head>
+      <div className="bg-[#000E1A]">
+
       <Header />
       <main className="min-h-xl max-w-screen-xl m-auto flex-col justify-center items-start">
-        <Welcome />
+        {/* <Welcome />
         <Community />
         <Hub />
-        <Newsletter />
+        <Newsletter /> */}
+        <p>a</p>
+        <p>a</p>
+
+        <p>a</p>
+
+        <p>a</p>
+
+        <p>a</p>
+
+        <p>a</p>
+
+
       </main>
       <Footer />
+      </div>
     </>
   );
 }
