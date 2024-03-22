@@ -115,7 +115,7 @@ export default function Header() {
                       <Space>
                         Resources
                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="mt-0.5 ml-0.5">
-                          <path d="M13.4583 5.6665L8.79167 10.3332L4.125 5.6665" stroke="#D1D2D5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M13.4583 5.6665L8.79167 10.3332L4.125 5.6665" stroke="#D1D2D5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </Space>
                     </a>

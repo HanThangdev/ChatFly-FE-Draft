@@ -1,10 +1,7 @@
 import Head from "next/head";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Newsletter from "./components/Newsletter";
-import Welcome from "./components/Welcome";
-import Community from "./components/Community";
-import Hub from "./components/Hub";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
   return (
@@ -22,20 +19,7 @@ export default function Home() {
 
       <Header />
       <main className="min-h-xl max-w-screen-xl m-auto flex-col justify-center items-start">
-        {/* <Welcome />
-        <Community />
-        <Hub />
-        <Newsletter /> */}
-        <p>a</p>
-        <p>a</p>
-
-        <p>a</p>
-
-        <p>a</p>
-
-        <p>a</p>
-
-        <p>a</p>
+      <Carousel/>
 
 
       </main>
