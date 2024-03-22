@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Carousel from "./components/Carousel";
 import Works from "./components/Works";
+import Feature from "./components/Feature";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
         <main>
           <Carousel />
           <Works />
-
+          <Feature />
 
         </main>
         <Footer />

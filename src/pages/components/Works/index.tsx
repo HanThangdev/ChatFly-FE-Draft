@@ -76,7 +76,7 @@ function Works() {
               <div className={`flex items-center font-semibold text-[1.25rem] leading-8 ${item.key === stepSelect ? 'text-white' : 'text-[#9e9e9e]'}`}>
                 <Image src={item.icon} alt={item.value} />
                 {stepSelect === item.key &&
-                  <Image src={item.loop} alt={item.value} className='absolute mt-[-8px] ml-[-30px]' />
+                  <Image key={item.key} src={item.loop} alt={item.value} className='absolute mt-[-8px] ml-[-30px]' />
                 }
                 <p className='ml-2'>{item.value}</p>
               </div>
