@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Carousel from "./components/Carousel";
+import Works from "./components/Works";
 
 export default function Home() {
   return (
@@ -17,13 +18,14 @@ export default function Home() {
       </Head>
       <div className="bg-[#000E1A]">
 
-      <Header />
-      <main className="min-h-xl max-w-screen-xl m-auto flex-col justify-center items-start">
-      <Carousel/>
+        <Header />
+        <main>
+          <Carousel />
+          <Works />
 
 
-      </main>
-      <Footer />
+        </main>
+        <Footer />
       </div>
     </>
   );
