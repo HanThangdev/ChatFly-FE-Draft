@@ -28,21 +28,21 @@ export default function Footer() {
 
   return (
     <footer
-      className="bg-[#000E1A] pt-40 pb-24"
+      className="bg-[#000E1A] lg:pt-40 pt-10 pb-24"
     >
-      <div className="bg-bgFooter text-center pb-12">
-        <h2 className="text-[#FFFFFF] font-semibold text-[40px]">Ready To Get Started?</h2>
-        <p className="font-normal text-xl text-[#D1D2D5] py-6">Want to see how Chafly can help you? Book a demo with us!</p>
-        <div className="pb-48">
+      <div className="text-center lg:pb-12 pb-4 lg:px-0 px-4">
+        <h2 className="text-[#FFFFFF] font-semibold lg:text-[40px] text-xl">Ready To Get Started?</h2>
+        <p className="font-normal lg:text-xl text-lg text-[#D1D2D5] py-6">Want to see how Chafly can help you? Book a demo with us!</p>
+        <div className="lg:pb-48 pb-10">
           <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signup`}
             className="mr-4 text-white px-5 py-3 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sx bg-btnStart">Sign Up — it&apos;s free</a>
           <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signin`}
             className="text-white bg-[#000E1A] px-5 py-3 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sm">Get a Demo</a>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto sm:px-6">
-        <div className="flex justify-between gap-8 py-16 md:py-12 border-b border-[#FFFFFF1A]">
-          <div className="mb-2 w-[28%]">
+      <div className="max-w-6xl mx-auto lg:px-0 px-4">
+        <div className="flex flex-wrap justify-between gap-8 py-16 md:py-12 border-b border-[#FFFFFF1A]">
+          <div className="mb-2 md:w-[28%] w-full">
             <Image
               src={logoDark}
               alt="Logo dark"
@@ -71,7 +71,7 @@ export default function Footer() {
               />
             </div>
           </div>
-          <div className="py-6 flex w-1/2 justify-between">
+          <div className="py-6 flex md:w-1/2 w-full justify-between">
             <ul className="font-medium text-sm text-white list-none gap-4 space-y-3">
               <li>Product</li>
               <li className="text-[#D1D2D5] cursor-pointer">

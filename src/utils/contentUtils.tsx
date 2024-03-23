@@ -1,7 +1,3 @@
-import ETHCoin from "../../public/assets/ethereum.png";
-import SecurityBadge from "../../public/assets/badge-check.png";
-import PieChart from "../../public/assets/chart.png";
-import StarBadge from "../../public/assets/badge-star.png";
 
 export const header_content = {
     logo: {
@@ -30,22 +26,22 @@ export const hub_content = [
     {
         title: "MarketPlace",
         text: "Set to operate a next-gen decentralized exchange, swapping digital assets from across the Interchain, with very low fees and instant transaction confirmation.",
-        image: ETHCoin,
+        image: 'ETHCoin',
     },
     {
         title: "Secutiry Provider",
         text: "With the upcoming Interchain Security feature, HEDRON will soon be securing many chains, in exchange for additional staking rewards.",
-        image: SecurityBadge,
+        image: 'SecurityBadge',
     },
     {
         title: "Router",
         text: "A core mission of the Hub – to connect chains by establishing IBC connections with compatible chains and operating decentralized bridges with chains like Ethereum and Bitcoin.",
-        image: PieChart,
+        image: 'PieChart',
     },
     {
         title: "Custodian",
         text: "Located at the crossroads of the Interchain, the Hub is extremely secure, the best place to hold digital assets and manage accounts across many chains.",
-        image: StarBadge,
+        image: 'StarBadge',
     }
 ];
 

@@ -5,21 +5,21 @@ import { carousel } from '@/assets/images'
 
 export default function Carousel() {
   return (
-    <div className='bg-bgLanding py-20'>
+    <div className='bg-bgLanding py-20 max-md:pb-0'>
       <div className='min-h-xl max-w-screen-xl justify-center items-start m-auto flex-col'>
         <div className='text-center'>
-          <div className='flex relative w-fit m-auto font-bold text-[4rem] leading-[4.5rem] text-white pt-20 pb-10'>
+          <div className='flex relative w-fit m-auto font-bold text-[2rem] md:text-[4rem] leading-[2rem] md:leading-[4.5rem] text-white pt-20 pb-10'>
             <p className='z-10'>
               Your Custom ChatGPT
             </p>
             <Image
               src={vectorChat}
-              className="absolute filter opacity-90 animate-blob left-[-20px] bottom-[12px] z-0"
+              className="absolute z-0 filter opacity-90 animate-blob md:w-[134px] md:left-[-20px] md:bottom-[12px] w-[66px] left-[-10px] bottom-[27px]"
               alt="icon-blue"
             />
             <Image
               src={vectorUnder}
-              className="absolute filter opacity-90 animate-blob right-[-20px] bottom-[30px] z-0"
+              className="absolute z-0 filter opacity-90 animate-blob  md:w-[314px] w-[134px] right-[-20px] bottom-[30px]"
               alt="icon-blue"
             />
           </div>

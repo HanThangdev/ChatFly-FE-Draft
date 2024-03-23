@@ -6,9 +6,11 @@ import { Dropdown, MenuProps, Space } from "antd";
 import { logoDark } from "@/assets/logo";
 import { iconBlog, iconDocBlue } from "@/assets/icon";
 import { menuItems } from "@/constants/header";
+import MobileMenu from "../MobileMenu";
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {
     const scrollToTop = () => {
@@ -43,7 +45,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", scrollHandler);
   }, [top]);
 
-  
+
   const items: MenuProps['items'] = [
     {
       key: '0',
@@ -72,7 +74,7 @@ export default function Header() {
           </div>
           <div>
 
-            <nav className="hidden md:flex md:grow pl-6">
+            <nav className="hidden lg:flex md:grow pl-6">
               <ul className="flex grow justify-center flex-wrap items-center list-none">
                 {menuItems.map((item, index) => (
                   <li key={index}>
@@ -101,10 +103,11 @@ export default function Header() {
           </div>
           <div>
             <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signin`}
-            className="text-white bg-[#000E1A] px-4 py-1 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sm">Login</a>
+              className="text-white bg-[#000E1A] px-4 py-1 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sm">Login</a>
             <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signup`}
-            className="ml-2 text-white px-4 py-1 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sx bg-btnStart">Start for free</a>
+              className="ml-2 text-white px-4 py-1 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sx bg-btnStart">Start for free</a>
           </div>
+          < MobileMenu />
         </div>
       </div>
     </header>

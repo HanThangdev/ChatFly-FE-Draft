@@ -9,16 +9,16 @@ function Feature() {
         <div id='features' className='pt-40 pb-20'>
             <div className='min-h-xl max-w-screen-xl justify-center items-start m-auto flex-col'>
                 <div className='text-center'>
-                    <h5 className='text-[#3169E6] text-[1.25rem] leading-8'>POWERFUL FEATURES</h5>
+                    <h5 className='text-[#3169E6] md:text-[1.25rem] leading-8 text-base'>POWERFUL FEATURES</h5>
                     <div className='flex relative w-fit m-auto'>
-                        <h2 className='text-white text-[2.5rem] leading-[3.25rem]'>How Chatfly Empowers Your Business</h2>
+                        <h2 className='text-white md:text-[2.5rem] md:leading-[3.25rem] text-xl'>How Chatfly Empowers Your Business</h2>
                         <Image
                             src={vectorTink}
                             className="absolute filter opacity-90 animate-blob right-[-3rem] bottom-[12px] z-0"
                             alt="icon-blue"
                         />
                     </div>
-                    <div className='flex gap-6 flex-wrap py-20'>
+                    <div className='flex gap-6 flex-wrap py-20 justify-center'>
                         {listFeature.map((item) =>
                             <div className='max-w-[23.5rem]' key={item.key}>
                                 <Image src={item.icon} alt={item.title} className='rounded-t-2xl' />
@@ -36,7 +36,7 @@ function Feature() {
             </div>
             <div className='text-center sw-container'>
                 <h5 className='font-medium text-[#D1D2D5] mb-6'>Trusted By Our Beloved Clients</h5>
-                <div className='flex gap-[132px]'>
+                <div className='flex lg:gap-[132px] md:gap-[100px] gap-[20px]'>
                     {listClient.map((item, i) =>
                         <Image key={i} src={item} alt={'mark'} className="object-cover my-4" />
                     )}

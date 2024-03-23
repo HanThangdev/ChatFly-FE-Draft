@@ -4,10 +4,6 @@ import Footer from "./components/Footer";
 import Carousel from "./components/Carousel";
 import Works from "./components/Works";
 import Feature from "./components/Feature";
-import Newsletter from "./components/Newsletter";
-import Welcome from "./components/Welcome";
-import Community from "./components/Community";
-import Hub from "./components/Hub";
 import Intergration from "./components/Intergration";
 import Plan from "./components/Plan";
 import Contact from "./components/Contact";
@@ -26,7 +22,6 @@ export default function Home() {
         <link rel="icon" href="/assets/yuan.png" />
       </Head>
       <div className="bg-[#000E1A]">
-
         <Header />
         <main>
           <Carousel />
