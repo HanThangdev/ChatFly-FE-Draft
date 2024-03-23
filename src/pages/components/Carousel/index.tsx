@@ -9,12 +9,20 @@ export default function Carousel() {
     <div className='bg-bgLanding py-20'>
       <div className='min-h-xl max-w-screen-xl justify-center items-start m-auto flex-col'>
         <div className='text-center'>
-          <div>
-            {/* <Image src={vectorChat} alt={"chat"} className='top-[160px] left-[380px] absolute z-0'/>
-          <Image src={vectorUnder} alt={"under"} className='top-[220px] right-[380px] absolute z-0'/> */}
-            <h2 className='relative z-10 font-bold text-[4rem] leading-[4.5rem] text-white pt-20 pb-10'>
+          <div className='flex relative w-fit m-auto font-bold text-[4rem] leading-[4.5rem] text-white pt-20 pb-10'>
+            <p className='z-10'>
               Your Custom ChatGPT
-            </h2>
+            </p>
+            <Image
+              src={vectorChat}
+              className="absolute filter opacity-90 animate-blob left-[-20px] bottom-[12px] z-0"
+              alt="icon-blue"
+            />
+            <Image
+              src={vectorUnder}
+              className="absolute filter opacity-90 animate-blob right-[-20px] bottom-[30px] z-0"
+              alt="icon-blue"
+            />
           </div>
           <p className='text-[#D1D2D5] text-[1.25rem] leading-8'>Empower Your Business Using Chatfly AI Assistant:</p>
           <p className='text-[#D1D2D5] text-[1.25rem] leading-8'>3x Faster, Privacy, and Accuracy.</p>

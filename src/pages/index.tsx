@@ -4,6 +4,14 @@ import Footer from "./components/Footer";
 import Carousel from "./components/Carousel";
 import Works from "./components/Works";
 import Feature from "./components/Feature";
+import Newsletter from "./components/Newsletter";
+import Welcome from "./components/Welcome";
+import Community from "./components/Community";
+import Hub from "./components/Hub";
+import Intergration from "./components/Intergration";
+import Plan from "./components/Plan";
+import Contact from "./components/Contact";
+import Template from "./components/Template";
 
 export default function Home() {
   return (
@@ -24,10 +32,14 @@ export default function Home() {
           <Carousel />
           <Works />
           <Feature />
-
+          <Intergration />
+          <Plan />
+          <Contact />
+          <Template />
         </main>
         <Footer />
       </div>
+
     </>
   );
 }

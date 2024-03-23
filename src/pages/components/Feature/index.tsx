@@ -12,7 +12,7 @@ import gitlab from '../../../../public/assets/mark-gitlab.png';
 import grammarly from '../../../../public/assets/mark-grammarly.png';
 import zoom from '../../../../public/assets/mark-zoom.png';
 import dribbble from '../../../../public/assets/mark-dribbble.png';
-
+import vectorTink from '../../../../public/assets/vector-tink.png';
 
 function Feature() {
     const listFeature = [
@@ -58,11 +58,18 @@ function Feature() {
 
 
     return (
-        <div className='pt-40 pb-20'>
+        <div id='features' className='pt-40 pb-20'>
             <div className='min-h-xl max-w-screen-xl justify-center items-start m-auto flex-col'>
                 <div className='text-center'>
                     <h5 className='text-[#3169E6] text-[1.25rem] leading-8'>POWERFUL FEATURES</h5>
-                    <h2 className='text-white text-[2.5rem] leading-[3.25rem]'>How Chatfly Empowers Your Business</h2>
+                    <div className='flex relative w-fit m-auto'>
+                        <h2 className='text-white text-[2.5rem] leading-[3.25rem]'>How Chatfly Empowers Your Business</h2>
+                        <Image
+                            src={vectorTink}
+                            className="absolute filter opacity-90 animate-blob right-[-3rem] bottom-[12px] z-0"
+                            alt="icon-blue"
+                        />
+                    </div>
                     <div className='flex gap-6 flex-wrap py-20'>
                         {listFeature.map((item) =>
                             <div className='max-w-[23.5rem]' key={item.key}>

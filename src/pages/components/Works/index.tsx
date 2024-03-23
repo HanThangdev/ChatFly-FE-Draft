@@ -67,7 +67,7 @@ function Works() {
   ]
 
   return (
-    <div className='bg-works'>
+    <div id='hiw' className='bg-works pt-20'>
       <div className='min-h-xl max-w-screen-xl justify-center items-start m-auto flex-col'>
         <h2 className='text-[#3169E6] text-[1.25rem] leading-8 pb-4'>SEE HOW CHATFLY WORKS</h2>
         <div className='flex gap-4 justify-between pt-4 pb-20'>

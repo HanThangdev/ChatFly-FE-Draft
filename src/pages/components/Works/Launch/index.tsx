@@ -2,6 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import frameLeft from '../../../../../public/assets/frame-launch-left.png'
 import frameRight from '../../../../../public/assets/frame-launch-right.png'
+import vectorLeft from '../../../../../public/assets/vector-launch-left.png'
+import vectorRight from '../../../../../public/assets/vector-launch-right.png'
 
 function Launch() {
   return (
@@ -9,7 +11,14 @@ function Launch() {
       <div className="w-5/12">
         <Image src={frameLeft} alt='frame launch left' className='bg-frameoverlay rounded-t-2xl'></Image>
         <div className="bg-launchoverlay text-center text-white pb-10 rounded-b-2xl px-4">
-          <h5 className="text-[2rem] leading-10 pt-10 font-semibold">Embed Into Your Site</h5>
+          <div className='flex relative w-fit m-auto'>
+            <h5 className="text-[2rem] leading-10 pt-10 font-semibold">Embed Into Your Site</h5>
+            <Image
+              src={vectorLeft}
+              className="absolute filter opacity-90 animate-blob left-[-10px] bottom-[-6px]"
+              alt="icon-blue"
+            />
+          </div>
           <p className="text-[1.25rem] leading-8 pt-4 pb-10">Easily embed ChatFly into your website in minute using our fully customizable widgets. </p>
           <button type='button' className='text-white px-5 py-3 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sx bg-btnStart'>
             <div className='flex'>
@@ -25,7 +34,14 @@ function Launch() {
       <div className="w-5/12">
         <Image src={frameRight} alt='frame launch left' className='bg-frameoverlay rounded-t-2xl'></Image>
         <div className="bg-launchoverlay text-center text-white pb-10 rounded-b-2xl px-4">
-          <h5 className="text-[2rem] leading-10 pt-10 font-semibold">Integrate Into Your Applications</h5>
+          <div className='flex relative w-fit m-auto'>
+            <h5 className="text-[2rem] leading-10 pt-10 font-semibold">Integrate Into Your Applications</h5>
+            <Image
+              src={vectorRight}
+              className="absolute filter opacity-90 animate-blob right-[-10px] bottom-[-6px]"
+              alt="icon-blue"
+            />
+          </div>
           <p className="text-[1.25rem] leading-8 pt-4 pb-10">Our API allows you to integrate AI chatbot into your own products using our APIs.</p>
           <button type='button' className='text-white bg-[#000E1A] px-5 py-3 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sm'>
             <div className='flex'>
