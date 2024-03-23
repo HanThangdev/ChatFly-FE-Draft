@@ -1,17 +1,10 @@
-import React, { useState } from 'react'
-import LoopAdd from '../../../../public/assets/add-loop.png'
-import LoopTune from '../../../../public/assets/tune-loop.png'
-import LoopCustom from '../../../../public/assets/cus-loop.png'
-import LoopLaunch from '../../../../public/assets/lauch-loop.png'
-import iconDocument from '../../../../public/assets/icon-document.svg'
-import iconTune from '../../../../public/assets/icon-smile.svg'
-import iconSetting from '../../../../public/assets/icon-setting.svg'
-import iconLaunch from '../../../../public/assets/icon-launch.svg'
+import { useState } from 'react'
 import Image from 'next/image'
 import AddData from './AddData'
 import Customize from './Customize'
-import TuneChatbot from './TuneChatBot'
 import Launch from './Launch'
+import TuneChatbot from './TuneChatBot'
+import { stepList } from '@/constants/works'
 
 function Works() {
   const [stepSelect, setStepSelect] = useState('0');
@@ -39,32 +32,6 @@ function Works() {
     }
   ]
 
-  const stepList = [
-    {
-      key: '0',
-      value: 'Add Data',
-      icon: iconDocument,
-      loop: LoopAdd
-    },
-    {
-      key: '1',
-      value: 'Tune Chatbot',
-      icon: iconTune,
-      loop: LoopTune
-    },
-    {
-      key: '2',
-      value: 'Customize Appearance',
-      icon: iconSetting,
-      loop: LoopCustom
-    },
-    {
-      key: '3',
-      value: 'Launch Chatbot',
-      icon: iconLaunch,
-      loop: LoopLaunch
-    },
-  ]
 
   return (
     <div id='hiw' className='bg-works pt-20'>

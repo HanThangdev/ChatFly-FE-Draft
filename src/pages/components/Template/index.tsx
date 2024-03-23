@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { iconBlue } from "@/images";
 import ItemTemplate from "./item";
 import { templates } from "@/constants/template";
+import { iconBlue } from "@/assets/icon";
 
 export default function Template() {
   return (
@@ -18,10 +18,11 @@ export default function Template() {
             alt="icon-blue"
           />
         </div>
-        <div className="mt-[40px] text-white bg-button-plan w-[226px] text-[16px] font-bold m-auto h-[48px] rounded-[12px] flex items-center justify-center">
+        <a  target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signin`}
+         className="mt-[40px] text-white bg-button-plan w-[226px] text-[16px] font-bold m-auto h-[48px] rounded-[12px] flex items-center justify-center">
           Start building —
           <span className="text-[#D1D2D5] ml-1">it&apos;s free</span>
-        </div>
+        </a>
         <div className="mt-[80px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {templates.map((item, index) => (
             <ItemTemplate key={index} item={item} />

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { iconBlue } from "@/images";
 import { useState } from "react";
 import ItemPlan from "./item";
 import { allItems } from "@/constants/plan";
+import { iconBlue } from "@/assets/icon";
 export default function Plan() {
   const [isMonth, setIsMonth] = useState<boolean>(true);
 

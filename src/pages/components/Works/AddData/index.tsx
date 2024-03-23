@@ -1,9 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import iconFly from '../../../../../public/assets/icon-fly.png'
-import iconCustom from '../../../../../public/assets/icon-custom.png'
-import iconApp from '../../../../../public/assets/icon-app.png'
-import frameAddData from '../../../../../public/assets/frame-adddata.png'
+import { iconApp, iconCustom, iconFly } from '@/assets/icon'
+import { frameAddData } from '@/assets/images'
 
 
 function AddData() {

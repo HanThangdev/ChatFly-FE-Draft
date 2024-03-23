@@ -1,15 +1,9 @@
 import React from "react";
-import LogoDark from '../../../../public/assets/logo_dark.png';
 import Image from "next/image";
-import iconFacebook from '../../../../public/assets/icon-facebook.png';
-import iconDiscord from '../../../../public/assets/icon-discord.png';
-import iconYoutube from '../../../../public/assets/icon-youtube.png';
-import iconLn from '../../../../public/assets/icon-linkedin.png';
-import iconTwitter from '../../../../public/assets/icon-twitter.png';
 import { Dropdown, MenuProps, Space } from "antd";
-import flagUk from '../../../../public/assets/flag-uk.png';
-import flagVi from '../../../../public/assets/flag-vietnam.svg';
-import flagJa from '../../../../public/assets/flag-japan.svg';
+import { flagJa, flagUk, flagVi } from "@/assets/flag";
+import { iconDiscord, iconFb, iconLn, iconTwitter, iconYt } from "@/assets/icon";
+import { logoDark } from "@/assets/logo";
 
 
 export default function Footer() {
@@ -40,21 +34,23 @@ export default function Footer() {
         <h2 className="text-[#FFFFFF] font-semibold text-[40px]">Ready To Get Started?</h2>
         <p className="font-normal text-xl text-[#D1D2D5] py-6">Want to see how Chafly can help you? Book a demo with us!</p>
         <div className="pb-48">
-          <button className="mr-4 text-white px-5 py-3 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sx bg-btnStart">Sign Up — it&apos;s free</button>
-          <button className="text-white bg-[#000E1A] px-5 py-3 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sm">Get a Demo</button>
+          <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signup`}
+            className="mr-4 text-white px-5 py-3 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sx bg-btnStart">Sign Up — it&apos;s free</a>
+          <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signin`}
+            className="text-white bg-[#000E1A] px-5 py-3 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sm">Get a Demo</a>
         </div>
       </div>
       <div className="max-w-6xl mx-auto sm:px-6">
         <div className="flex justify-between gap-8 py-16 md:py-12 border-b border-[#FFFFFF1A]">
           <div className="mb-2 w-[28%]">
             <Image
-              src={LogoDark}
+              src={logoDark}
               alt="Logo dark"
             />
             <p className="text-[14px] leading-6 text-[#D1D2D5] py-5">Al chatbot builder that utilizes AI to analyze your data and integrate Chat widget into your site.</p>
             <div className="flex gap-4 py-4 ">
               <Image
-                src={iconFacebook}
+                src={iconFb}
                 alt="Icon"
               />
               <Image
@@ -62,7 +58,7 @@ export default function Footer() {
                 alt="Icon"
               />
               <Image
-                src={iconYoutube}
+                src={iconYt}
                 alt="Icon"
               />
               <Image
@@ -78,8 +74,16 @@ export default function Footer() {
           <div className="py-6 flex w-1/2 justify-between">
             <ul className="font-medium text-sm text-white list-none gap-4 space-y-3">
               <li>Product</li>
-              <li className="text-[#D1D2D5] cursor-pointer">Sign Up</li>
-              <li className="text-[#D1D2D5] cursor-pointer">Log In</li>
+              <li className="text-[#D1D2D5] cursor-pointer">
+                <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signup`}>
+                  Sign Up
+                </a>
+              </li>
+              <li className="text-[#D1D2D5] cursor-pointer">
+                <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signup`}>
+                  Log In
+                </a>
+              </li>
             </ul>
             <ul className="font-medium text-sm text-white list-none gap-4 space-y-3">
               <li>Resources</li>

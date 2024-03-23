@@ -2,10 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import LogoDark from '../../../../public/assets/logo_dark.png';
-import IconDocument from '../../../../public/assets/document.svg';
-import IconBlog from '../../../../public/assets/blog.svg';
 import { Dropdown, MenuProps, Space } from "antd";
+import { logoDark } from "@/assets/logo";
+import { iconBlog, iconDocBlue } from "@/assets/icon";
+import { menuItems } from "@/constants/header";
+
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
 
@@ -42,42 +43,16 @@ export default function Header() {
     return () => window.removeEventListener("scroll", scrollHandler);
   }, [top]);
 
-  const menuItems = [
-    {
-      name: 'How Its Works',
-      href: "#hiw",
-    },
-    {
-      name: 'Features',
-      href: "#features",
-    },
-    {
-      name: 'Intergrations',
-      href: "#intergrations",
-    },
-    {
-      name: 'Pricing',
-      href: '#pricing',
-    },
-    {
-      name: 'Contact',
-      href: '#contact',
-    },
-    {
-      name: 'FAQs',
-      href: '#faqs',
-    },
-  ];
-
+  
   const items: MenuProps['items'] = [
     {
       key: '0',
-      icon: <Image src={IconDocument} alt="icon document" />,
+      icon: <Image src={iconDocBlue} alt="icon document" />,
       label: <a target="_blank" rel="noreferrer" href={`${process.env.REACT_APP_DOC_PAGE}/documentation/introduction`}>Documentation</a>,
     },
     {
       key: '1',
-      icon: <Image src={IconBlog} alt="icon blog" className="ml-[3px]" />,
+      icon: <Image src={iconBlog} alt="icon blog" className="ml-[3px]" />,
       label: <a target="_blank" rel="noreferrer" href={`${process.env.REACT_APP_BLOG_PAGE}`}>Blog</a>,
     }
   ];
@@ -91,7 +66,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="shrink-0 mr-4 flex items-center text-gray-400">
             <Image
-              src={LogoDark}
+              src={logoDark}
               alt="Logo dark"
             />
           </div>
@@ -125,8 +100,10 @@ export default function Header() {
             </nav>
           </div>
           <div>
-            <button className="text-white bg-[#000E1A] px-4 py-1 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sm">Login</button>
-            <button className="ml-2 text-white px-4 py-1 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sx bg-btnStart">Start for free</button>
+            <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signin`}
+            className="text-white bg-[#000E1A] px-4 py-1 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sm">Login</a>
+            <a target="_blank" rel={'noreferrer'} href={`${process.env.REACT_APP_URL_ADMIN_PAGE}/auth/signup`}
+            className="ml-2 text-white px-4 py-1 border-[1px] border-[#FFFFFF33] gap-8 rounded-lg shadow-inner-sx bg-btnStart">Start for free</a>
           </div>
         </div>
       </div>

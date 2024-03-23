@@ -1,20 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
-import frameLeft from '../../../../../public/assets/frame-launch-left.png'
-import frameRight from '../../../../../public/assets/frame-launch-right.png'
-import vectorLeft from '../../../../../public/assets/vector-launch-left.png'
-import vectorRight from '../../../../../public/assets/vector-launch-right.png'
+import { frameLaunchLeft, frameLaunchRight } from '@/assets/images'
+import { vectorLaunchLeft, vectorLaunchRight } from '@/assets/vector'
 
 function Launch() {
   return (
     <div className='flex gap-4 pb-40 justify-around'>
       <div className="w-5/12">
-        <Image src={frameLeft} alt='frame launch left' className='bg-frameoverlay rounded-t-2xl'></Image>
+        <Image src={frameLaunchLeft} alt='frame launch left' className='bg-frameoverlay rounded-t-2xl'></Image>
         <div className="bg-launchoverlay text-center text-white pb-10 rounded-b-2xl px-4">
           <div className='flex relative w-fit m-auto'>
             <h5 className="text-[2rem] leading-10 pt-10 font-semibold">Embed Into Your Site</h5>
             <Image
-              src={vectorLeft}
+              src={vectorLaunchLeft}
               className="absolute filter opacity-90 animate-blob left-[-10px] bottom-[-6px]"
               alt="icon-blue"
             />
@@ -32,12 +30,12 @@ function Launch() {
       </div>
 
       <div className="w-5/12">
-        <Image src={frameRight} alt='frame launch left' className='bg-frameoverlay rounded-t-2xl'></Image>
+        <Image src={frameLaunchRight} alt='frame launch left' className='bg-frameoverlay rounded-t-2xl'></Image>
         <div className="bg-launchoverlay text-center text-white pb-10 rounded-b-2xl px-4">
           <div className='flex relative w-fit m-auto'>
             <h5 className="text-[2rem] leading-10 pt-10 font-semibold">Integrate Into Your Applications</h5>
             <Image
-              src={vectorRight}
+              src={vectorLaunchRight}
               className="absolute filter opacity-90 animate-blob right-[-10px] bottom-[-6px]"
               alt="icon-blue"
             />

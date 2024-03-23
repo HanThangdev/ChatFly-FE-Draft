@@ -1,6 +1,4 @@
-import frameGeneration from '../../public/assets/frame-generation.png';
-import frameEdu from '../../public/assets/frame-edu.png';
-import frameQnA from '../../public/assets/frame-qna.png';
+import { frameEdu, frameGeneration, frameQnA } from "@/assets/images";
 
 export const templates = [
   {

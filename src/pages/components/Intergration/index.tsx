@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { imageIntergration, iconBlue } from "@/images";
+import { iconBlue } from "@/assets/icon";
+import { imageIntergration } from "@/assets/images";
 
 export default function Intergration() {
   return (

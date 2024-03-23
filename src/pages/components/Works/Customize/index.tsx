@@ -1,9 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import iconHeart from '../../../../../public/assets/icon-heart.png'
-import iconWifi from '../../../../../public/assets/icon-wifi.png'
-import iconTick from '../../../../../public/assets/icon-tick.png'
-import frameCustom from '../../../../../public/assets/frame-custom.png'
+import { iconHeart, iconTick, iconWifi } from '@/assets/icon'
+import { frameCustom } from '@/assets/images'
 
 function Customize() {
   return (

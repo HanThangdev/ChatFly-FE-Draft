@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { iconBlue } from "@/images";
 import { InlineWidget } from "react-calendly";
 import { IconLock, IconSetting, IconPerson, IconEye } from "./icon";
+import { iconBlue } from "@/assets/icon";
 export default function Contact() {
   return (
     <div id="contact" className="flex-col py-40 bg-contact relative w-full">

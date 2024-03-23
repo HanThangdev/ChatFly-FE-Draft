@@ -1,61 +1,9 @@
 import Image from 'next/image';
-import frameChannel from '../../../../public/assets/frame-channel.png';
-import frameLanguage from '../../../../public/assets/frame-language.png';
-import framePowerful from '../../../../public/assets/frame-powerful.png';
-import framePrebuilt from '../../../../public/assets/frame-prebuilt.png';
-import frameReport from '../../../../public/assets/frame-report.png';
-import frameWhiteLabel from '../../../../public/assets/frame-whitelabel.png';
-import picvid from '../../../../public/assets/picvid.png';
-import spotify from '../../../../public/assets/mark-spotify.png';
-import canva from '../../../../public/assets/mark-canva.png';
-import gitlab from '../../../../public/assets/mark-gitlab.png';
-import grammarly from '../../../../public/assets/mark-grammarly.png';
-import zoom from '../../../../public/assets/mark-zoom.png';
-import dribbble from '../../../../public/assets/mark-dribbble.png';
-import vectorTink from '../../../../public/assets/vector-tink.png';
+import { picvid } from '@/assets/images';
+import { vectorTink } from '@/assets/vector';
+import { listClient, listFeature } from '@/constants/feature';
 
 function Feature() {
-    const listFeature = [
-        {
-            key: 0,
-            icon: frameLanguage,
-            title: '98+ Languages',
-            description: `Automatically detect customer's language and tailored automations tailored to 98 languages.`
-        },
-        {
-            key: 1,
-            icon: frameChannel,
-            title: 'Integration with 10+ Channels',
-            description: `Easily to connect your chatbot to your favorite tools like Slack, WhatsApp, Telegram... plus in the website's own chat. `
-        },
-        {
-            key: 2,
-            icon: framePowerful,
-            title: 'Powerful Chatbot API',
-            description: `Connect your chatbot with every part of our software, using our API that also offers other multiple integrations.`
-        },
-        {
-            key: 3,
-            icon: framePrebuilt,
-            title: 'Prebuilt Templates',
-            description: `Get started with pre-built templates for popular use cases—from support to teaching...`
-        },
-        {
-            key: 4,
-            icon: frameWhiteLabel,
-            title: 'White-label AI Chabot',
-            description: `We offer chat widget with fully tailored to your specific needs, including removing the “Powered by CustomGPT” branding. `
-        },
-        {
-            key: 5,
-            icon: frameReport,
-            title: 'Report',
-            description: `Collect, analysis and export chatbot usage history across various periods.`
-        },
-    ];
-
-    const listClient = [spotify, grammarly, canva, dribbble, zoom, dribbble, zoom, gitlab];
-
 
     return (
         <div id='features' className='pt-40 pb-20'>
