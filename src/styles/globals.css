@@ -43,3 +43,32 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgba(var(--background-rgba));
 }
+
+.sw-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.sw-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 160px; 
+  height: 256px;
+  background: linear-gradient(-94.81deg, rgba(0, 14, 26, 0) 3.49%, #000E1A 103.98%);
+  z-index: 2; 
+}
+
+.sw-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 160px; 
+  height: 256px;
+  background: linear-gradient(94.81deg, rgba(0, 14, 26, 0) 3.49%, #000E1A 103.98%);
+  z-index: 2; 
+}

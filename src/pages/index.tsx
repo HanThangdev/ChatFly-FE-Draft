@@ -1,10 +1,13 @@
 import Head from "next/head";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Newsletter from "./components/Newsletter";
-import Welcome from "./components/Welcome";
-import Community from "./components/Community";
-import Hub from "./components/Hub";
+import Carousel from "./components/Carousel";
+import Works from "./components/Works";
+import Feature from "./components/Feature";
+import Intergration from "./components/Intergration";
+import Plan from "./components/Plan";
+import Contact from "./components/Contact";
+import Template from "./components/Template";
 
 export default function Home() {
   return (
@@ -18,14 +21,20 @@ export default function Home() {
         />
         <link rel="icon" href="/assets/yuan.png" />
       </Head>
-      <Header />
-      <main className="min-h-xl max-w-screen-xl m-auto flex-col justify-center items-start">
-        <Welcome />
-        <Community />
-        <Hub />
-        <Newsletter />
-      </main>
-      <Footer />
+      <div className="bg-[#000E1A]">
+        <Header />
+        <main>
+          <Carousel />
+          <Works />
+          <Feature />
+          <Intergration />
+          <Plan />
+          <Contact />
+          <Template />
+        </main>
+        <Footer />
+      </div>
+
     </>
   );
 }
