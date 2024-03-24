@@ -5,6 +5,7 @@ import logoGrammarly from './mark-grammarly.png';
 import logoSpotify from './mark-spotify.png';
 import logoZoom from './mark-zoom.png';
 import logoDark from './logo_dark.png';
+import logo from './logo.png';
 export {
     logoDark,
     logoCanva,
@@ -12,5 +13,6 @@ export {
     logoGitlab,
     logoGrammarly,
     logoSpotify,
-    logoZoom
+    logoZoom,
+    logo,
 }
