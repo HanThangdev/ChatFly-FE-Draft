@@ -43,10 +43,10 @@ export default function Plan() {
           {allItems.map((item, index) => (
             <ItemPlan
               key={index}
-              items={item.item}
-              text={item.text}
-              price={item.price}
-              isBlue={item.isBlue}
+              items={item?.item}
+              text={item?.text}
+              price={item?.price}
+              isBlue={item?.isBlue}
               isMonth={isMonth}
             />
           ))}
