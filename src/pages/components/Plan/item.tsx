@@ -52,7 +52,7 @@ function ItemPlan({ items, text, price, isBlue, isMonth }: ItemsProps) {
             {text === "Free" ? "Get started" : `Upgrade to ${text}`}
           </a>
         </div>
-        {items.map((item, index) => (
+        {items?.map((item, index) => (
           <div
             className="text-white-80 flex gap-2 items-center h-[40px]"
             key={index}
